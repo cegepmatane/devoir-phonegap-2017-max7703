@@ -1,4 +1,5 @@
 ﻿var applicationListeNoel = {
+    cadeauDAO: new CadeauDAO(),
     lancer: function ()
     {
         this.naviguer();
@@ -9,7 +10,8 @@
         var ancre = window.location.hash;
         if (!ancre)
         {
-            var listeCadeauVue = new ListeCadeauVue();
+            var listeCadeau = this.cadeauDAO.getListeCadeau();
+            var listeCadeauVue = new ListeCadeauVue(listeCadeau);
 
             listeCadeauVue.afficher();
         }
