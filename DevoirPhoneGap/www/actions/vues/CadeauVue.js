@@ -4,7 +4,7 @@
     {
         var pageCadeau = $("#page-cadeau").html();
 
-        $("body").html(pageCadeau);
+        $("body").html(CadeauVue.pageCadeau);
 
         $("#cadeau-nom").html(cadeau.nom);
         $("#cadeau-marque").html(cadeau.marque);
@@ -12,3 +12,4 @@
 
     }
 }
+CadeauVue.pageCadeau = $("#page-cadeau").html();

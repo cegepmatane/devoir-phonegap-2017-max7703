@@ -2,9 +2,7 @@
 {
     this.afficher = function ()
     {
-        var pageListeCadeau = $("#page-liste-cadeau").html();
-
-        $("body").html(pageListeCadeau);
+        $("body").html(ListeCadeauVue.pageListeCadeau);
 
         var htmlListeCadeau = $("#liste-cadeau");
 
@@ -17,3 +15,4 @@
         htmlListeCadeau.html(li);
     }
 }
+ListeCadeauVue.pageListeCadeau = $("#page-liste-cadeau").html();
