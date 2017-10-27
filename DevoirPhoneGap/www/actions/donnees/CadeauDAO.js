@@ -1,4 +1,5 @@
-﻿var CadeauDAO = function () {
+﻿var CadeauDAO = function ()
+{
     var listeCadeau = [
         { "id": 1, "nom": "Pebble", "marque": "Pebble", "description": "Montre intel" },
         { "id": 2, "nom": "iPhone", "marque": "Apple", "description": "telephone" },
@@ -9,7 +10,17 @@
         { "id": 7, "nom": "Surface pro", "marque": "Microsoft", "description": "telephone" }
     ];
 
-    this.getListeCadeau = function () {
+    this.getListeCadeau = function ()
+    {
         return listeCadeau;
+    }
+
+    this.getCadeauParId = function (id)
+    {
+        for (var indiceCadeau in listeCadeau)
+        {
+            cadeau = listeCadeau[indiceCadeau];
+            if (cadeau.id == id) return cadeau;
+        }
     }
 }
