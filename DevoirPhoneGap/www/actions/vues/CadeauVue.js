@@ -1,6 +1,7 @@
-﻿var CadeauVue = function (cadeau) {
-
-    this.afficher = function () {
+﻿var CadeauVue = function (cadeau)
+{
+    this.afficher = function ()
+    {
         var pageCadeau = $("#page-cadeau").html();
 
         $("body").html(pageCadeau);

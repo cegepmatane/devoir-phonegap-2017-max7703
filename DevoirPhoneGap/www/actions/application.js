@@ -15,6 +15,16 @@
 
             listeCadeauVue.afficher();
         }
+        else
+        {
+            var trouvailles = ancre.match(/^#cadeau\/([0-9]+)/);
+
+            var id = trouvailles[1];
+            var cadeau = this.cadeauDAO.getCadeauParId(id);
+            var cadeauVue = new CadeauVue(cadeau);
+
+            cadeauVue.afficher();
+        }
     }
 }
 

@@ -1,6 +1,7 @@
-﻿var ListeCadeauVue = function (listeCadeau) {
-
-    this.afficher = function () {
+﻿var ListeCadeauVue = function (listeCadeau)
+{
+    this.afficher = function ()
+    {
         var pageListeCadeau = $("#page-liste-cadeau").html();
 
         $("body").html(pageListeCadeau);
