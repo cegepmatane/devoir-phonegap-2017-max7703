@@ -2,13 +2,12 @@
 {
     this.afficher = function ()
     {
-        var pageCadeau = $("#page-cadeau").html();
-
         $("body").html(CadeauVue.pageCadeau);
 
         $("#cadeau-nom").html(cadeau.nom);
         $("#cadeau-marque").html(cadeau.marque);
         $("#cadeau-description").html(cadeau.description);
+        $("#cadeau-prix").html(cadeau.prix + "€");
 
     }
 }
