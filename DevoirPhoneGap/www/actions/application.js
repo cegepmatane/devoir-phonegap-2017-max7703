@@ -1,5 +1,6 @@
 ﻿var applicationListeNoel = {
     cadeauDAO: new CadeauDAO(),
+    ajouterCadeauVue: new AjouterCadeauVue(),
     lancer: function ()
     {
         $(window).on('hashchange', $.proxy(this.naviguer, this));
@@ -15,6 +16,15 @@
             var listeCadeauVue = new ListeCadeauVue(listeCadeau);
 
             listeCadeauVue.afficher();
+        }
+        else if (ancre.match(/^#ajouter-cadeau/)) {
+            this.ajouterCadeauVue.afficher();
+        }
+
+        else if (ancre.match(/^#AjouterCadeauVue:NouveauCadeau/)) {
+            var cadeau = this.ajouterCadeauVue.cadeau;
+            this.cadeauDAO.ajouterCadeau(cadeau);
+            window.location.hash = "#";
         }
         else
         {

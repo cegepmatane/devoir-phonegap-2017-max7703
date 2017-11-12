@@ -13,12 +13,13 @@
         Il y a une erreur dans le programme
 
         <script id="page-liste-cadeau">
-            <div>
-                <h1>
-                    liste des cadeaux
-                </h1>
-                <ul id="liste-cadeau"></ul>
-            </div>
+        <div>
+            <h1>
+                liste des cadeaux
+            </h1>
+            <a href="#ajouter-cadeau"> Ajouter un cadeau </a>
+            <ul id="liste-cadeau"></ul>
+        </div>
         </script>
 
         <script id="page-cadeau">
@@ -58,10 +59,11 @@
         </script>
 
         <script type="text/javascript" charset="utf-8" src="libs/jquery.js"></script>
-        <script src="action/modeles/Cadeau.js"></script>
+        <script src="actions/modeles/Cadeau.js"></script>
         <script src="actions/donnees/CadeauDAO.js"></script>
         <script src="actions/vues/ListeCadeauxVue.js"></script>
         <script src="actions/vues/CadeauVue.js"></script>
+        <script src="actions/vues/AjouterCadeauVue.js"></script>
         <script src="actions/application.js"></script>
     </body>
 </html>
