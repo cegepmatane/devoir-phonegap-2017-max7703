@@ -15,6 +15,22 @@
         return listeCadeau;
     }
 
+    trouverNouvelId = function () {
+        maximum = 0;
+        for (var indiceCadeau in listeCadeau) {
+            cadeau = listeCadeau[indiceCadeau];
+            if (cadeau.id > maximum)
+                maximum = cadeau.id;
+            //if (cadeau.id == id) return cadeau;
+        }
+        return maximum + 1;
+    }
+
+    this.ajouterCadeau = function (cadeau) {
+        cadeau.id = trouverNouvelId();
+        listeCadeau.push(cadeau);
+    }
+
     this.getCadeauParId = function (id)
     {
         for (var indiceCadeau in listeCadeau)
