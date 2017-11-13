@@ -21,6 +21,26 @@
             this.ajouterCadeauVue.afficher();
         }
 
+        else if (ancre.match(/^#modifier-cadeau\/([0-9]+)/)) {
+            var trouvailles = ancre.match(/^#modifier-cadeau\/([0-9]+)/);
+
+            var id = trouvailles[1];
+            var cadeau = this.cadeauDAO.getCadeauParId(id);
+            var modifierCadeauVue = new ModifierCadeauVue(cadeau);
+
+            modifierCadeauVue.afficher();
+        }
+        else if (ancre.match(/^#supprimer-cadeau\/([0-9]+)/)) {
+            var trouvailles = ancre.match(/^#supprimer-cadeau\/([0-9]+)/);
+
+            var id = trouvailles[1];
+            var cadeau = this.cadeauDAO.getCadeauParId(id);
+            this.cadeauDAO.supprimerCadeau(cadeau);
+            window.location.hash = "#";
+        }
+        else if (ancre.match(/^#ModifierCadeauVue:Modifier/)) {
+            window.location.hash = "#";
+        }
         else if (ancre.match(/^#AjouterCadeauVue:NouveauCadeau/)) {
             var cadeau = this.ajouterCadeauVue.cadeau;
             this.cadeauDAO.ajouterCadeau(cadeau);

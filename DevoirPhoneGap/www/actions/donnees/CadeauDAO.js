@@ -41,6 +41,16 @@
         listeCadeau.push(cadeau);
     }
 
+    this.modifierCadeau = function (cadeau) {
+        listeCadeau[cadeau.id - 1] = cadeau;
+    }
+    this.supprimerCadeau = function (cadeau) {
+        var index = listeCadeau.indexOf(cadeau);
+        if (index > -1) {
+            listeCadeau.splice(index, 1);
+        }
+    }
+
     this.getCadeauParId = function (id)
     {
         for (var indiceCadeau in listeCadeau)
