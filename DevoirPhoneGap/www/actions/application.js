@@ -1,5 +1,5 @@
 ﻿var applicationListeNoel = {
-    cadeauDAO: new CadeauDAO(),
+    cadeauDAO: new CadeauDAOLocalStorage(),
     ajouterCadeauVue: new AjouterCadeauVue(),
     lancer: function ()
     {

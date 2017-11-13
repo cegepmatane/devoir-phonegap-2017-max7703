@@ -9,7 +9,7 @@
         var li = "";
 
         for (var indiceCadeau in listeCadeau) {
-            li += '<li><a href="#cadeau/' + listeCadeau[indiceCadeau].id + '">' + listeCadeau[indiceCadeau].nom + '</a></li>';
+            li += '<li><a class="btn_detail" href="#cadeau/' + listeCadeau[indiceCadeau].id + '">' + listeCadeau[indiceCadeau].nom + '</a></li>';
         }
 
         htmlListeCadeau.html(li);

@@ -11,7 +11,7 @@
         $("#cadeau-description").html(cadeau.description);
         $("#cadeau-prix").html(cadeau.prix + "€");
 
-        p = '<p><a href="#modifier-cadeau/' + cadeau.id + '">' + "Modifier" + '</a> <a href="#supprimer-cadeau/' + cadeau.id + '">' + "Supprimer" + '</a> </p>';
+        p = '<p><a class="btn_modifier" href="#modifier-cadeau/' + cadeau.id + '">' + "Modifier" + '</a> <a class="btn_supprimer" href="#supprimer-cadeau/' + cadeau.id + '">' + "Supprimer" + '</a> </p>';
 
         htmlCadeau.html(p);
     }

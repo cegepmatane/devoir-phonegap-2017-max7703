@@ -2,7 +2,7 @@
     var instance = this;
     this.afficher = function () {
 
-        var cadeauDAO = new CadeauDAO();
+        var cadeauDAO = new CadeauDAOLocalStorage();
 
         $("body").html(ModifierCadeauVue.pageModifierCadeau);
 

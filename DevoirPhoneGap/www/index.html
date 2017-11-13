@@ -17,8 +17,8 @@
             <h1>
                 liste des cadeaux
             </h1>
-            <a href="#ajouter-cadeau"> Ajouter un cadeau </a>
             <ul id="liste-cadeau"></ul>
+            <a class="btn_ajouter" href="#ajouter-cadeau"> Ajouter un cadeau </a>
         </div>
         </script>
 
@@ -55,7 +55,7 @@
                         <input type="text" name="prix" id="prix" />
                     </div>
                 </fieldset>
-                <input type="submit" value="Ajouter le cadeau" />
+                <input class="btn_back" type="submit" value="Ajouter le cadeau" />
             </form>
             <a href="#">Annuler et revenir &agrave; la liste</a>
         </script>
@@ -85,14 +85,14 @@
                         <input type="text" name="prix" id="prix" />
                     </div>
                 </fieldset>
-                <input type="submit" value="Modifier le cadeau" />
+                <input type="submit" class="btn_modifier" value="Modifier le cadeau" />
             </form>
-            <a href="#">Annuler et revenir &agrave; la liste</a>
+            <a class="btn_back" href="#">Annuler et revenir &agrave; la liste</a>
         </script>
 
         <script type="text/javascript" charset="utf-8" src="libs/jquery.js"></script>
         <script src="actions/modeles/Cadeau.js"></script>
-        <script src="actions/donnees/CadeauDAO.js"></script>
+        <script src="actions/donnees/CadeauDAOLocalStorage.js"></script>
         <script src="actions/vues/ListeCadeauxVue.js"></script>
         <script src="actions/vues/CadeauVue.js"></script>
         <script src="actions/vues/AjouterCadeauVue.js"></script>
