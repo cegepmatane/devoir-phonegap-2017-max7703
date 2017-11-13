@@ -39,12 +39,14 @@
     }
     this.modifierCadeau = function (cadeau) {
         listeCadeau[cadeau.id - 1] = cadeau;
+        localStorage['cadeau'] = JSON.stringify(listeCadeau);
     }
     this.supprimerCadeau = function (cadeau) {
         var index = listeCadeau.indexOf(cadeau);
         if (index > -1) {
             listeCadeau.splice(index, 1);
         }
+        localStorage['cadeau'] = JSON.stringify(listeCadeau);
     }
     this.getCadeauParId = function (id) {
 
