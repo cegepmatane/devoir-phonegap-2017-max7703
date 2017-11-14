@@ -1,34 +1,5 @@
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
 body {
-    -webkit-touch-callout: none;
-    -webkit-text-size-adjust: none;
-    -webkit-user-select: none;
-	background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    text-transform:uppercase;
-    width:100%;
-	
-    background-color:#32383d;
-    font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
-    font-size:12px;
+    background-color: #E4E4E4;
 }
 
 h1 {
@@ -83,6 +54,7 @@ h1 {
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     text-align: center;
+    display: block;
 }
 
     .btn_ajouter:hover {
@@ -158,33 +130,6 @@ li {
         background-image: -ms-linear-gradient(top, #fc3c3c, #d93434);
         background-image: -o-linear-gradient(top, #fc3c3c, #d93434);
         background-image: linear-gradient(to bottom, #fc3c3c, #d93434);
-        text-decoration: none;
-    }
-
-.btn_back {
-    background: #3489d9;
-    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-    background-image: -o-linear-gradient(top, #3498db, #2980b9);
-    background-image: linear-gradient(to bottom, #3498db, #2980b9);
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 10px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-}
-
-    .btn_back:hover {
-        background: #d93434;
-        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
         text-decoration: none;
     }
 

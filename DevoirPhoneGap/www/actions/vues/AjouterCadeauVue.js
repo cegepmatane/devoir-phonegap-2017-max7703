@@ -2,7 +2,6 @@
     var instance = this;
     this.cadeau = null;
     this.afficher = function () {
-        this.cadeau = null;
 
         $("body").html(AjouterCadeauVue.pageAjouterCadeau);
 
@@ -13,7 +12,7 @@
             var prix = $("#prix").val();
             var description = $("#description").val();
 
-            instance.cadeau = new Cadeau(nom, marque, prix, description)
+            instance.cadeau = new Cadeau(nom, marque, prix, description);
             window.location.hash = "#AjouterCadeauVue:NouveauCadeau";
         });
     }
